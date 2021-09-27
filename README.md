@@ -19,6 +19,7 @@ GoIT - Bootcamp 11 - HW - 07 -  JavaScript
 
 Необходимо немного изменить разметку карточки галереи, используй этот шаблон.
 
-<a class="gallery__item" href="large-image.jpg">
+`<a class="gallery__item" href="large-image.jpg">
   <img class="gallery__image" src="small-image.jpg" alt="Image description" />
 </a>
+`

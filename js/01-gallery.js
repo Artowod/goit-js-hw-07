@@ -32,8 +32,9 @@ import { galleryItems } from './gallery-items.js';
 /* console.log(galleryItems); */
 
 const galleryArea = document.querySelector('.gallery');
+let galleryItem = '';
 galleryItems.forEach(({ preview, original, description }, index) => {
-  const galleryItem = `
+  galleryItem += `
 <div class="gallery__item">
 <a class="gallery__link" href="${original}">
 <img
@@ -45,8 +46,9 @@ alt="${description}"
 </a>
 </div>
 `;
-  galleryArea.insertAdjacentHTML('beforeend', galleryItem);
 });
+
+galleryArea.insertAdjacentHTML('beforeend', galleryItem);
 
 galleryArea.addEventListener('click', e => {
   e.preventDefault();
